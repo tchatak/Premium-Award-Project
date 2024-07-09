@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="50000; url=3.html">
+    <link rel="stylesheet" href="n/style.css">
+    <title>UB NAV welcomes you</title>
+</head>
+
+<body>
+    
+        <div class="radar_button">
+            <ul class="radar">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        
+  
+    <div id="welcome_me">
+        <h1 id="typewriter"></h1>
+        <a href="markers/index.html"><button class="btn_welcome">let's go</button></a>
+    </div>
+
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+    const typewriterText = "Welcome to Our Map!";
+    const typewriterElement = document.getElementById('typewriter');
+    
+
+    let index = 0;
+
+    function type() {
+        if (index < typewriterText.length) {
+            typewriterElement.textContent += typewriterText.charAt(index);
+            index++;
+            setTimeout(type, 100); // Adjust typing speed here
+        }
+    }
+
+    type();
+});
+
+</script>
+
+</html>

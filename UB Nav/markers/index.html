@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"/>
+
+
+    <title>One minute map</title>
+</head>
+<body>
+    <!-- Map -->
+    <div id="map"></div>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+        <button class="dropbtn">M</button>
+        <div class="dropdown-content">
+            <button id="layerSwitchButton">Switch Layer</button>
+            <button id="see">Router</button>
+            <button id="reset">Reset Router</button>
+            <button id="stop">Stop Routing</button>
+            <a href="https://test-hosting-8c73e.firebaseapp.com/" style="margin-top: 10px; text-decoration: none;"><button id="3D"
+                style="
+                    background-image: linear-gradient(to right, red,blue);
+                    color: white;
+                    
+            
+                    
+                    
+                    
+                    "
+
+
+                >For a clearer view in 3D, Click Me!!!</button></a>
+        </div>
+    </div>
+    
+    <!-- Notification -->
+    <div id="notification"></div>
+
+
+    
+    <!----leaflet js cdn-->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+
+    <!--leaflet routing js-->
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
